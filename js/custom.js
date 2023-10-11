@@ -37,6 +37,14 @@ $('.toggle-menu').click(function() {
                 }
                 lastScrollTop = st;
             });
+            
+            // jss
+            $(window).load(function(){
+            	$('.cssloader-parent').fadeOut(1000,function(){
+            		$(this).remove();
+            	});
+            });
+
 
 
 })

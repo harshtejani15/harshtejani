@@ -279,6 +279,83 @@ a {
     overflow: hidden;
 }
 
+
+/** loader **/
+.sh2 {
+    width: 50px;
+    border-radius: 0;
+    height: 0px;
+    border-style: solid;
+    border-color: #000;
+    margin: -50px auto 0px;
+    animation: 1s ease 0s infinite normal none running shk2;
+    height: 50px;
+    background-color: #000;
+}
+
+.sh1{
+    width: 50px;
+    border-radius: 0;
+    height: 0px;
+    border-style: solid;
+    border-color: #fff;
+    margin: -50px auto 0px;
+    animation: 1s ease 0s infinite normal none running shk1;
+    height: 50px;
+    background-color: #fff;
+}
+
+.cssloader{
+    position: relative;
+}
+
+/** animation starts here **/
+@keyframes shk1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-400deg);
+  }
+}
+
+
+
+@keyframes shk2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(400deg);
+  }
+}
+
+.lt {
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    margin: 30px auto;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+
+.cssloader-parent {
+    position: fixed;
+    background: #222;
+    opacity: 0.6;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: .0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+
+/*loader end*/
+
 .row{
     display: flex;
     align-items: center;
