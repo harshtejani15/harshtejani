@@ -285,15 +285,28 @@ a {
     flex-wrap: wrap;
 }
 
-header {
+.header {
     padding: 20px 0;
     position: fixed;
     width: 100%;
     z-index: 99;
+    transition: all 0.5s ease 0s;
+}
+
+.fixed{
+    background-color: rgba(255,255,255,0.6);
+}
+
+.scrolling_up{
+    background-color: rgba(255,255,255,0.4);
 }
 
 header .row{
     justify-content: space-between;
+}
+
+.fixed .header-logo a{
+    color: var(--black);
 }
 
 .header-logo a{
@@ -322,12 +335,20 @@ header .header-menu ul li a{
     transition: all 0.5s ease 0s;
 }
 
+.fixed .header-menu ul li a{
+    color: var(--black);
+}
+
 header .header-menu ul li a:hover{
     display: block;
 }
 
 header .header-menu ul li a:hover:after{
     width: 100%;
+}
+
+.fixed .header-menu ul li a:after{
+    background-color: var(--black);
 }
 
 header .header-menu ul li a:after{
