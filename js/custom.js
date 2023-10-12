@@ -46,5 +46,16 @@ $('.toggle-menu').click(function() {
             });
 
 
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                autoplay:true,
+                autoplayTimeout:2000,
+                autoplayHoverPause:true,
+                items:1,
+                dots:false,
+            })
+
+
 
 })

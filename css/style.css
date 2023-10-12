@@ -464,6 +464,7 @@ header .header-menu ul li a:after{
 
 .btn-primary:hover:after {
     transform: translateX(-15%) translateY(-50%) rotate(50deg);
+
 }
 
 .btn-primary span{
@@ -533,8 +534,9 @@ header .header-menu ul li a:after{
     margin-top: 15px;
     font-weight: 300;
 }
+
 .name-area .bold-text {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     display: inline-block;
 }
 
@@ -605,4 +607,27 @@ header .header-menu ul li a:after{
 
 .our-info > * {
     display: inline-block;
+}
+
+.skils{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.skils p{;
+    margin-right: 10px;
+    display: flex;
+    font-weight: 500;  
+    margin-bottom: 0;
+}
+
+.skils .skill-slide{
+    color: var(--white);
+    font-weight: 600;
+}
+
+.skils ul{
+    width: 100%;
+    max-width: 150px;
 }
