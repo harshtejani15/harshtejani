@@ -18,12 +18,12 @@
 	}
 
 	.menu_open .toggle-menu span:nth-child(2) {
-	    transform: rotate(-47deg);
+	    transform: rotate(-45deg);
 	    top: 10px;
 	}
 
 	.menu_open .toggle-menu span:nth-child(1) {
-	    transform: rotate(50deg);
+	    transform: rotate(45deg);
 	    width: 100%;
 	}
 

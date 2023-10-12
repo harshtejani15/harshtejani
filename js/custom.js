@@ -40,7 +40,7 @@ $('.toggle-menu').click(function() {
             
             // jss
             $(window).load(function(){
-            	$('.cssloader-parent').fadeOut(1000,function(){
+            	$('.vertical-centered-box').fadeOut(1000,function(){
             		$(this).remove();
             	});
             });
