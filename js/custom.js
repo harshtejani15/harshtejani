@@ -1,5 +1,18 @@
 $(document).ready(function () {
 
+	$(window).scroll(function() {
+	    if ($(this).scrollTop()) {
+	        $('.scroll-top').fadeIn();
+	    } else {
+	        $('.scroll-top').fadeOut();
+	    }
+	});
+
+	$(".scroll-top").click(function() {
+	    $("html, body").animate({
+	    	scrollTop: 0
+	    }, 0);
+	 });
 
 
 $('.toggle-menu').click(function() {
@@ -57,5 +70,18 @@ $('.toggle-menu').click(function() {
             })
 
 
+              $('.selector').animatedHeadline({
+                  animationType: 'push'
+              });
+
+              AOS.init();
+
 
 })
+
+
+const text = document.querySelector('.circle span');
+		text.innerHTML = text.innerText.split("").map(
+			(char, i) =>
+			`<span style="transform:rotate(${i * 15}deg)">${char}</span>`
+			).join("")

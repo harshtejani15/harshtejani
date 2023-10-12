@@ -57,11 +57,33 @@
 	.toggle-menu{
 		order: 3;
 	}
+
+	.side-contact {
+	    top: 200px;
+	}
+
+	.clcik-top a {
+	    font-size: 25px;;
+	}
+
+	.clcik-top {
+	    height: 100px;
+	    width: 100px;
+	}
+
+	.clcik-top span {
+	    font-size: 11px;
+	    transform-origin: 0 50px;
+	}
 }
 
 @media (max-width:992px){
 	.name-area .bold-text h2 {
 	    font-size: 80px;
+	}
+
+	.side-contact {
+	    top: 230px;
 	}
 
 	.name-area .bold-text span {
@@ -72,9 +94,43 @@
 	.name-area .bold-text p {
 	    font-size: 18px;	
 	}
+
+	.clcik-top {
+	    height: 90px;
+	    width: 90px;
+	}
+
+	.clcik-top a {
+	    font-size: 20px;
+	}
+
+	.clcik-top span {
+	    font-size: 10px;
+	    transform-origin: 0 45px;
+	}
+
+	.service-sec .service-box ul {
+		justify-content: center;
+	}
+
+	.service-sec .service-box ul li {
+	    width: 100%;
+	    max-width: calc(100% / 2);
+	    padding: 20px;
+	    margin: 0 12px;
+	    margin-bottom: 20px;
+	}
+
+	.about-me-info .row > div{
+		max-width: 100%;
+	}
 }
 
 @media (max-width:767px){
+
+	section {
+	    padding: 50px 0;
+	}
 
 	body p {
 	    font-size: 14px;
@@ -121,5 +177,41 @@
 	    font-size: 25px;
 	}
 
+	.clcik-top span{
+		font-size: 7px;
+		transform-origin:0 30px;
+	}
+
+	.clcik-top a{
+		font-size: 15px;
+	}
+
+	.clcik-top {
+	    height: 60px;
+	    width: 60px;
+	}
+
+	.service-sec .service-box ul li {
+	    max-width: calc(100% / 1);
+	    padding: 20px;
+	    margin: 0 12px;
+	    margin-bottom: 20px;
+	}
+
+	.sec-heading p {
+	    font-size: 16px;
+	}
+
+	.sec-heading h2 {
+	    font-size: 18px;
+	}
+
+	.skils span:nth-child(2){
+		font-size: 14px;
+	}
+
+	.about-me-info-text:before {
+	    height: 65%;;
+	}
 
 }
