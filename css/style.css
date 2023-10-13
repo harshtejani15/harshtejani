@@ -357,7 +357,7 @@ a {
 /*loadere*/
 
 .sec-heading h2 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 400;
     color: #ccc;
     text-transform: capitalize;
@@ -386,8 +386,8 @@ a {
     transition: all 0.5s ease 0s;
 }
 
-.fixed{
-    background-color: rgba(255,255,255,0.6);
+.fixed {
+    background-color: rgba(255,255,255,1);
 }
 
 .scrolling_up{
@@ -535,7 +535,6 @@ header .header-menu ul li a:after{
     color: var(--white);
     font-size: 15px;
     margin-bottom: 15px;
-    opacity: 0.5;
     font-weight: 400;
 }
 
@@ -553,7 +552,7 @@ header .header-menu ul li a:after{
 
 .name-area .bold-text p {
     font-size: 20px;
-    color: var(--border);
+    color: var(--white);
     margin-top: 15px;
     font-weight: 300;
 }
@@ -673,11 +672,12 @@ header .header-menu ul li a:after{
     left: 50%;
     font-size: 13px ;
     transform-origin: 0 60px;
+    color: var(--border);
 }
 
-.clcik-top a{
+.clcik-top a {
     font-size: 30px;
-    color: #1F1F1F;
+    color: var(--border);
     display: block;
 }
 
@@ -697,7 +697,7 @@ header .header-menu ul li a:after{
     background-size: cover;
 }
  .sec-heading{
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .service-sec .service-box ul{
@@ -799,7 +799,6 @@ header .header-menu ul li a:after{
     width: 100%;
     max-width: 45%;
     line-height: 0;
-    overflow: hidden;
 }
 
 .about-me-info .about-me-img div{
@@ -811,17 +810,115 @@ header .header-menu ul li a:after{
 }
 
 
-.about-me-img .about-inner-img:after {
+.about-me-img:after {
     content: "";
     position: absolute;
     height: 80%;
     width: 95%;
     top: -10px;
     background-color: var(--border);
-    left: 30px;
+    left: 46px;
     z-index: -1;
 }
 
 .about-sec .sec-heading{
     margin-bottom: 90px;
+}
+
+.contact-addres {
+    width: 100%;
+    max-width: 40%;
+}
+
+.footer {
+    background: #222;
+    position: relative;
+    padding-top: 100px;
+}
+
+.footer-top .content-all {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.con-add-inner .icon a {
+    display: flex;
+    font-size: 20px;
+    margin-right: 20px;
+    background-color: #ccc;
+    color: #222;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.footer-top .contact-inner .row {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-top .con-add-inner .contact-text h1{
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+.footer-top .con-add-inner .contact-text p,.con-add-inner .contact-text a{
+    font-size: 16px;
+    display: block;
+}
+
+.form-area{
+    width: 100%;
+    max-width: 60%;
+}
+
+.form-area form {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.form-area form .form-inerr {
+    width: 100%;
+    max-width: 50%;
+    padding: 0 10px;
+    margin-bottom: 30px;
+}
+
+.form-area form .message{
+    max-width: 100%;
+}
+
+.footer-top .form-area form .form-inerr.message textarea{
+    height: 200px;
+    resize: none;
+    padding-top: 10px;
+}
+
+.footer-top .form-area form .form-inerr input,.form-area form .form-inerr textarea{
+    border: 0;
+    border-bottom: 1px solid #a3a5a7;
+    height: 45px;
+    width: 100%;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.1);
+    position: relative;
+    background-color: transparent;
+    color: var(--white);
+}
+
+.footer-bottom{
+    padding: 10px 0;
+    background-color: #fff;
+}
+
+.footer-bottom p{
+    text-align: center;
+    color: var(--black);
 }

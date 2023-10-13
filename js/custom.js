@@ -20,7 +20,11 @@ $(document).ready(function () {
 
 
 $('.toggle-menu').click(function() {
-    $("body").toggleClass('menu_open');
+    $("body").toggleClass('menu_open')
+
+    $('.header-menu ul li').click(function(){
+        $("body").removeClass('menu_open');
+    })
 })
 
     $(window).scroll(function() {
@@ -114,6 +118,4 @@ const text = document.querySelector('.circle span');
             `<span style="transform:rotate(${i * 15}deg)">${char}</span>`
             ).join("")
 
-         function scroll(element){   
-        var ele = document.getElementById(element);   
-        window.scrollTo(ele.offsetLeft,ele.offsetTop); } 
+        
