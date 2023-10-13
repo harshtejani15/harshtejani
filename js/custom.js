@@ -1,3 +1,7 @@
+
+
+
+
 $(document).ready(function () {
 
 	$(window).scroll(function() {
@@ -31,6 +35,7 @@ $('.toggle-menu').click(function() {
             jQuery('#return-to-top').fadeOut(300);
         }
     });
+
 
     //on scroll hide and show header
             var lastScrollTop = 0;
@@ -69,6 +74,27 @@ $('.toggle-menu').click(function() {
                 dots:false,
             })
 
+            $(document).ready(function(){
+              // Add smooth scrolling to all links
+              $("a").on('click', function(event) {
+
+                if (this.hash !== "") {
+                  // Prevent default anchor click behavior
+                  event.preventDefault();
+
+                  var hash = this.hash;
+
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                }
+              });
+            });
+
 
               $('.selector').animatedHeadline({
                   animationType: 'push'
@@ -76,6 +102,8 @@ $('.toggle-menu').click(function() {
 
               AOS.init();
 
+             // CSS selector
+             new Ukiyo(".ukiyo")
 
 })
 
@@ -85,3 +113,7 @@ const text = document.querySelector('.circle span');
 			(char, i) =>
 			`<span style="transform:rotate(${i * 15}deg)">${char}</span>`
 			).join("")
+
+         function scroll(element){   
+        var ele = document.getElementById(element);   
+        window.scrollTo(ele.offsetLeft,ele.offsetTop); } 

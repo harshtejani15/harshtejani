@@ -41,6 +41,10 @@
 	    justify-content: start;
 	}	
 
+	body.scrolling_up .toggle-menu span{
+		background-color: #000;
+	}
+
 	.header-menu .btn-primary{
 		order: 1;
 		margin-right: 20px;
@@ -123,6 +127,10 @@
 
 	.about-me-info .row > div{
 		max-width: 100%;
+	}
+
+	.about-me-img{
+		margin-top: 50px;
 	}
 }
 
@@ -212,6 +220,10 @@
 
 	.about-me-info-text:before {
 	    height: 65%;;
+	}
+
+	.about-me-info .about-me-img {
+	    padding-top: 119%;
 	}
 
 }
