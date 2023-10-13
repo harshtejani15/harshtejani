@@ -4,23 +4,23 @@
 
 $(document).ready(function () {
 
-	$(window).scroll(function() {
-	    if ($(this).scrollTop()) {
-	        $('.scroll-top').fadeIn();
-	    } else {
-	        $('.scroll-top').fadeOut();
-	    }
-	});
+    $(window).scroll(function() {
+        if ($(this).scrollTop()) {
+            $('.scroll-top').fadeIn();
+        } else {
+            $('.scroll-top').fadeOut();
+        }
+    });
 
-	$(".scroll-top").click(function() {
-	    $("html, body").animate({
-	    	scrollTop: 0
-	    }, 0);
-	 });
+    $(".scroll-top").click(function() {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 0);
+     });
 
 
 $('.toggle-menu').click(function() {
-	$("body").toggleClass('menu_open');
+    $("body").toggleClass('menu_open');
 })
 
     $(window).scroll(function() {
@@ -58,9 +58,9 @@ $('.toggle-menu').click(function() {
             
             // jss
             $(window).load(function(){
-            	$('.vertical-centered-box').fadeOut(1000,function(){
-            		$(this).remove();
-            	});
+                $('.vertical-centered-box').fadeOut(1000,function(){
+                    $(this).remove();
+                });
             });
 
 
@@ -109,10 +109,10 @@ $('.toggle-menu').click(function() {
 
 
 const text = document.querySelector('.circle span');
-		text.innerHTML = text.innerText.split("").map(
-			(char, i) =>
-			`<span style="transform:rotate(${i * 15}deg)">${char}</span>`
-			).join("")
+        text.innerHTML = text.innerText.split("").map(
+            (char, i) =>
+            `<span style="transform:rotate(${i * 15}deg)">${char}</span>`
+            ).join("")
 
          function scroll(element){   
         var ele = document.getElementById(element);   
