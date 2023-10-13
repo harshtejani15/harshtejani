@@ -457,7 +457,7 @@ header .header-menu ul li a:after{
 
 
 .btn-primary {
-    padding: 10px 40px;
+    padding: 10px 35px;
     position: relative;
     display: inline-block;
     overflow: hidden;
@@ -912,6 +912,20 @@ header .header-menu ul li a:after{
     background-color: transparent;
     color: var(--white);
 }
+
+.form-inerr .btn-primary{
+    background-color: #ccc;
+}
+.form-inerr .btn-primary span{
+    color: var(--black);
+    display: block;
+    cursor: pointer;
+}
+
+.form-inerr .btn-primary:after{;
+    background-color:rgba(255,255,255,0.9);
+}
+
 
 .footer-bottom{
     padding: 10px 0;
